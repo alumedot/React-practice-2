@@ -1,0 +1,45 @@
+.block {
+  position: relative;
+  padding: 1.5em;
+  width: 60%;
+  margin: 20px auto;
+  box-shadow: 0 2px 3px rgba(41, 18, 32, 0.83);
+  border-radius: 3px;
+}
+
+.heightClass {
+  composes: block;
+  height: 100px;
+}
+
+.person {
+  composes: heightClass;
+  background-color: #9d89ff;
+  color: white;
+  text-shadow: 1px 2px 5px rgba(30, 30, 255, 0.8), 0 0 2px #211f22;
+}
+
+.someStyle {
+  background-color: aquamarine;
+}
+
+.deleteButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 0.9em;
+  color: #ff1c76;
+  text-shadow: 1px 2px 5px #1e1eff, 0 0 2px #fcf2ff;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: rgba(177, 38, 88, 0.8);
+}
+
+@media (min-width: 500px) {
+  .person {
+    width: 400px;
+  }
+}
+
